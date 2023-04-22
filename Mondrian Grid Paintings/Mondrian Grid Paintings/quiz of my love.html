@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*
+        Blue - #004592
+        Yellow - #F9D01E
+        Red - #E72F24
+        White - #F0F1EC
+        */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul {
+            width: 800px;
+            display: grid;
+            grid-template-columns: 1.2fr 0.4fr 0.4fr 0.2fr 1.5fr;
+            grid-template-rows: 200px 80px 60px 60px 400px;
+            gap: 5px;
+            background-color: #000;
+        }
+
+        li {
+            background-color: #fff;
+        }
+
+        li:nth-child(1) {
+            background-color: #004592;
+            grid-row: span 2;
+        }
+
+        li:nth-child(2) {
+            grid-column: span 3;
+        }
+
+        li:nth-child(3) {
+            background-color: #F9D01E;
+        }
+
+        li:nth-child(5) {
+            grid-column: span 2;
+        }
+
+        li:nth-child(6) {
+            grid-row: span 3;
+        }
+
+        li:nth-child(8) {
+            grid-column: span 2;
+            grid-row: span 3;
+        }
+
+        li:nth-child(9) {
+            grid-row: span 2;
+        }
+
+        li:nth-child(10) {
+            grid-row: span 2;
+        }
+
+        li:nth-child(11) {
+            grid-column: span 2;
+            background-color: #ff6b46;
+        }
+
+        li:nth-child(2), li:nth-child(5), li:nth-child(6), li:nth-child(8), li:nth-child(9), li:nth-child(10) {
+            background-color: #F0F1EC;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
