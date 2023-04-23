@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #444;
+        }
+
+        ul {
+            display: inline-grid;
+            grid-template-columns: 87px 8px 20px 15px 82px 6px 20px 25px 22px 60px 8px 68px 10px 45px 110px 6px 105px 20px 26px 85px;
+            grid-template-rows: 92px 8px 35px 65px 25px 8px 60px 38px 7px 7px 20px 23px 55px 42px 50px 10px 35px 38px 45px 40px 28px;
+            gap: 2px;
+            background-color: #000;
+        }
+
+        li {
+            background-color: white;
+        }
+
+        li:nth-child(1) {
+            background-color: rgb(26, 86, 104);
+            grid-column: span 6;
+            grid-row: span 3;
+        }
+
+        li:nth-child(2) {
+            grid-column: span 4;
+        }
+
+        li:nth-child(3) {
+            background-color: yellow;
+            grid-column: span 4;
+            grid-row: span 2;
+        }
+
+        li:nth-child(4) {
+            background-color: rgb(26, 86, 104);
+            grid-column: span 3;
+            grid-row: span 4;
+        }
+
+        li:nth-child(5) {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+
+        li:nth-child(6) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        li:nth-child(7) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        li:nth-child(8) {
+            background-color: rgb(126, 56, 167);
+            grid-column: span 4;
+            grid-row: span 5;
+        }
+
+        li:nth-child(9) {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+
+        li:nth-child(10) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        li:nth-child(11) {
+            grid-column: span 5;
+            grid-row: span 2;
+        }
+
+        li:nth-child(12) {
+            grid-column: span 2;
+        }
+
+        li:nth-child(14) {
+            grid-row: span 5;
+        }
+
+        li:nth-child(15) {
+            grid-column: span 2;
+            grid-row: span 4;
+        }
+
+        li:nth-child(16) {
+            grid-column: span 3;
+            grid-row: span 4;
+        }
+        
+        li:nth-child(17) {
+            grid-column: span 4;
+            grid-row: span 6;
+        }
+
+        li:nth-child(18) {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        li:nth-child(19) {
+            background-color: rgb(206, 138, 186);
+            grid-column: span 3;
+            grid-row: span 6;
+        }
+
+        li:nth-child(20) {
+            grid-column: span 3;
+            grid-row: span 4;
+        }
+
+        li:nth-child(21) {
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+
+        li:nth-child(22) {background-color: rgb(206, 138, 186);
+            grid-column: span 3;
+            grid-row: span 7;
+        }
+
+        li:nth-child(23) {
+            grid-column: span 2;
+            grid-row: span 5;
+        }
+
+        li:nth-child(24) {
+            grid-column: span ;
+            grid-row: span ;
+        }
+
+        li:nth-child(25) {
+            grid-column: span ;
+            grid-row: span 7;
+        }
+
+        li:nth-child(26) {
+            grid-column: span 4;
+            grid-row: span 3;
+        }
+
+        li:nth-child(27) {
+            grid-column: span 5;
+            grid-row: span 2;
+        }
+
+        li:nth-child(28) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        li:nth-child(29) {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        li:nth-child(30) {
+            grid-column: span 5;
+            grid-row: span ;
+        }
+
+        li:nth-child(31) {
+            grid-column: span 2;
+            grid-row: span ;
+        }
+
+        li:nth-child(32) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        li:nth-child(33) {
+            background-color: yellow;
+            grid-column: span 2;
+            grid-row: span 4;
+        }
+
+        li:nth-child(34) {
+            background-color: rgb(126, 56, 167);
+            grid-column: span 7;
+            grid-row: span 4;
+        }
+
+        li:nth-child(35) {
+            grid-column: span ;
+            grid-row: span 4;
+        }
+
+        li:nth-child(36) {
+            grid-column: span 3;
+            grid-row: span ;
+        }
+
+        li:nth-child(37) {
+            grid-column: span ;
+            grid-row: span ;
+        }
+
+        li:nth-child(38) {
+            grid-column: span 3;
+            grid-row: span 6;
+        }
+
+        li:nth-child(39) {
+            grid-column: span ;
+            grid-row: span 6;
+        }
+
+        li:nth-child(40) {
+            grid-column: span 3;
+            grid-row: span 6;
+        }
+
+        li:nth-child(41) {
+            grid-column: span 2;
+            grid-row: span 4;
+        }
+
+        li:nth-child(42) {
+            grid-column: span ;
+            grid-row: span 4;
+        }
+
+        li:nth-child(43) {
+            grid-column: span ;
+            grid-row: span 3;
+        }
+
+        li:nth-child(44) {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+        
+        li:nth-child(45) {
+            grid-column: span ;
+            grid-row: span 3;
+        }
+
+        li:nth-child(46) {
+            grid-column: span 4;
+            grid-row: span 3;
+        }
+
+        li:nth-child(47) {
+            grid-column: span ;
+            grid-row: span 3;
+        }
+
+        li:nth-child(48) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        li:nth-child(49) {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- Thanks to my love second time for another one of this! -->
+</body>
+</html>
